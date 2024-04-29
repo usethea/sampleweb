@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+$purple: #8c7ae6;
+$orange: #e84118;
+$grey-dark: #7f8fa6;
+$grey-light: #dcdde1;
+$grey-lighter: #f5f6fa;
+$blue: #0097e6;
+$yellow: #fbc531;
+
+$family-sans-serif: "Ubuntu", sans-serif;
+$body-background-color: $grey-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+$primary: $purple;
+$link: $blue;
+
+@import "../bulma/bulma.sass";

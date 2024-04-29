@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lapsi</title>
+        <link rel="stylesheet" href="./static/bulma/css/basicstyles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <style>
+            .hero {
+              background: #fff url("https://unsplash.it/1200/640/?random&pic=1033") no-repeat 50%;
+              background-size: cover;
+            }
+            .intro {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              left: 0;
+              top: 0;
+              z-index: 999;
+              background: #fff url("https://unsplash.it/1200/640/?random&pic=1035") no-repeat 50%;
+              background-size: cover;
+              display: none;
+            }
+            .ready .intro {
+              display: none !important;
+            }
+      
+            #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: black ;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+          }
+      
+          #myBtn:hover {
+            background-color: #555;
+          }
+      
+          .float{
+            position:fixed;
+            width:60px;
+            height:60px;
+            bottom:90px;
+            right:30px;
+            background-color:#25d366;
+            color:#FFF;
+            border-radius:50px;
+            text-align:center;
+            font-size:30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index:100;
+          }
+      
+          .my-float{
+            margin-top:16px;
+          } 
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+              <div class="container">
+              <div class="navbar-brand">
+                <a class="navbar-item" href="https://bulma.io">
+                  <img src="static/images/logo_black.png" alt="logo" width="auto" height="60px"/>
+            
+                </a>
+            
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                </a>
+              </div>
+            
+              <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-end">
+                  <a class="navbar-item" href="#hero">
+                    Home
+                  </a>
+            
+                  <a class="navbar-item" href="#profile">
+                    Profile
+                  </a>
+                  <a class="navbar-item" href="#service">
+                    Service
+                  </a>
+                  <a class="navbar-item" href="#gallery">
+                    Gallery
+                  </a>
+                  <!-- <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                      More
+                    </a>
+            
+                    <div class="navbar-dropdown">
+                      <a class="navbar-item">
+                        About
+                      </a>
+                      <a class="navbar-item is-selected">
+                        Jobs
+                      </a>
+                      <a class="navbar-item">
+                        Contact
+                      </a>
+                      <hr class="navbar-divider">
+                      <a class="navbar-item">
+                        Report an issue
+                      </a>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+            </nav>
+          
+      </header>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <section class="section hero is-medium" id="hero">
+          <div class="container">
+              <div class="hero-body">
+                  <p class="title has-text-white">BANGUN IMPIANMU</p>
+                  <p class="subtitle has-text-white">kekuatan dan kepantasan kami</p>
+              </div>
+              <!-- <div class="bannerimage">
+                  <img src="https://persadaland.com/wp-content/uploads/2019/04/Pakailah-Jasa-Kontraktor-Untuk-Renovasi-Bangunan.jpg" alt="" width="150px" height="100px">
+              </div> -->
+          </div>
+      </section>
+      <section class="profile is-medium my-4" id="profile">
+          <div class="container">
+              <h1 class="title">PROFILE</h1>
+              PT. SULAEMAN RENOVASI SEJAHTERA
+              </h2>
+              <article class="media">
+                  <figure class="media-left">
+                      <p class="image is-128x128">
+                        <img src="static/images/logo_black.png" />
+                      </p>
+                  </figure>
+                  
+                  <div class="media-content">
+                    Sulaeman Renovasi Sejahtera adalah sebuah perusahaan konstruksi yang berdedikasi untuk memberikan solusi terbaik dalam pembangunan dan renovasi bangunan. Dengan pengalaman yang luas dan komitmen yang kuat terhadap keunggulan, kami telah menjadi pilihan utama bagi klien-klien yang mencari layanan konstruksi berkualitas tinggi. <br><br>
+                    Sebagai perusahaan yang bergerak di bidang konstruksi, kami mengutamakan kepuasan pelanggan dengan menyediakan layanan yang komprehensif mulai dari perencanaan hingga penyelesaian proyek. Tim kami terdiri dari tenaga ahli yang berpengalaman dan terampil dalam berbagai aspek konstruksi, termasuk arsitektur, teknik sipil, dan manajemen proyek. <br><br>
+                    Komitmen kami terhadap kualitas dan ketepatan waktu tercermin dalam setiap proyek yang kami tangani. Kami memahami betapa pentingnya setiap detail dalam pembangunan dan renovasi bangunan, sehingga kami selalu berusaha untuk memberikan hasil yang sesuai dengan harapan klien kami. <br><br>
+                    Dengan visi untuk menjadi pemimpin dalam industri konstruksi, Sulaeman Renovasi Sejahtera terus berinovasi dan mengembangkan diri untuk memenuhi tuntutan pasar yang terus berubah. Kami percaya bahwa kolaborasi yang kuat dengan klien, vendor, dan mitra bisnis kami adalah kunci kesuksesan, dan kami berkomitmen untuk membangun hubungan yang saling menguntungkan dengan semua pihak yang terlibat. <br><br>
+                    Sulaeman Renovasi Sejahtera tidak hanya sekadar membangun bangunan, tapi juga membangun kepercayaan. Dengan standar etika yang tinggi, integritas yang tak tertandingi, dan fokus yang tak kenal lelah pada keunggulan, kami siap menjadi mitra terpercaya bagi semua kebutuhan konstruksi Anda.
+                  </div>
+              </article>
+              
+          </div>
+      </section>   
+      <section class="service" id="service">
+          <div class="container">
+              <h1 class="title">SERVICE</h1>
+              <h2 class="subtitle">
+                  Layan yang kami berikan
+              </h2>
+              <div class="columns">
+                  <div class="column is-one-quarter">
+                      <div class="card">
+                          <div class="card-image">
+                            <figure class="image is-4by3">
+                              <img
+                                src="https://unsplash.it/300/200/?random&pic=100"
+                                alt="Placeholder image"
+                              />
+                            </figure>
+                          </div>
+                          <div class="card-content">
+                            <div class="media">
+                              <div class="media-left">
+                                <figure class="image is-48x48 is-rounded">
+                                  <span class="material-symbols-outlined">
+                                    room_preferences
+                                  </span>
+                                </figure>
+                              </div>
+                              <div class="media-content">
+                                <p class="title is-4">JASA GAMBAR</p>
+                                <!-- <p class="subtitle is-6">@johnsmith</p> -->
+                              </div>
+                            </div>
+                        
+                            <div class="content">
+                              Kami adalah tim desainer bangunan yang kreatif dan teliti, 
+                              memberikan layanan profesional yang terpercaya. Desain kami 
+                              menginspirasi dan fungsional, dengan fokus pada inovasi dan 
+                              detail.
+                              <br />
+                              <!-- <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time> -->
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="column is-one-quarter">
+                      <div class="card">
+                          <div class="card-image">
+                            <figure class="image is-4by3">
+                              <img
+                                src="https://unsplash.it/300/200/?random&pic=102"
+                                alt="Placeholder image"
+                              />
+                            </figure>
+                          </div>
+                          <div class="card-content">
+                            <div class="media">
+                              <div class="media-left">
+                                <figure class="image is-48x48">
+                                  <span class="material-symbols-outlined">
+                                    wifi_home
+                                    </span>
+                                </figure>
+                              </div>
+                              <div class="media-content">
+                                <p class="title is-4">ESTIMASI BIAYA RENOVASI</p>
+                                <!-- <p class="subtitle is-6">@johnsmith</p> -->
+                              </div>
+                            </div>
+                        
+                            <div class="content">
+                              Biaya mudah dimengerti. Estimasi biaya yang cocok dengan anggaran Anda.
+                              Biaya yang diberikan sesuai dengan yang Anda butuhkan.
+                              Siap untuk menyesuaikan dengan kebutuhan Anda.
+                              <br />
+                              <!-- <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time> -->
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="column is-one-quarter">
+                      <div class="card">
+                          <div class="card-image">
+                            <figure class="image is-4by3">
+                              <img
+                                src="https://unsplash.it/300/200/?random&pic=104"
+                                alt="Placeholder image"
+                              />
+                            </figure>
+                          </div>
+                          <div class="card-content">
+                            <div class="media">
+                              <div class="media-left">
+                                <figure class="image is-48x48">
+                                  <span class="material-symbols-outlined">
+                                    carpenter
+                                  </span>
+                                </figure>
+                              </div>
+                              <div class="media-content">
+                                <p class="title is-4">UPAH JASA TENAGA</p>
+                                <!-- <p class="subtitle is-6">@johnsmith</p> -->
+                              </div>
+                            </div>
+                        
+                            <div class="content">
+                              Informasi yang transparan tentang struktur dan perhitungan upah.
+                              Fleksibel untuk negosiasi sesuai dengan kebutuhan proyek.
+                              Berdasarkan keterampilan dan pengalaman tenaga kerja.
+                              <br />
+                              <!-- <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time> -->
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="column is-one-quarter">
+                      <div class="card">
+                          <div class="card-image">
+                            <figure class="image is-4by3">
+                              <img
+                                src="https://unsplash.it/300/200/?random&pic=106"
+                                alt="Placeholder image"
+                              />
+                            </figure>
+                          </div>
+                          <div class="card-content">
+                            <div class="media">
+                              <div class="media-left">
+                                <figure class="image is-48x48">
+                                  <span class="material-symbols-outlined">
+                                    construction
+                                    </span>
+                                </figure>
+                              </div>
+                              <div class="media-content">
+                                <p class="title is-4">UPAH JASA PLUS BARANG</p>
+                                <!-- <p class="subtitle is-6">@johnsmith</p> -->
+                              </div>
+                            </div>
+                        
+                            <div class="content">
+                              Upah Jasa Tenaga: Biaya untuk pekerjaan yang dilakukan oleh tenaga kerja.
+                              Harga Barang Bangunan: Biaya untuk semua bahan bangunan yang digunakan dalam proyek renovasi.
+                              <br />
+                              <!-- <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time> -->
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+              </div>
+          </div>
+      </section>    
+      <section class="section gallery" id="gallery">
+          <div class="container">
+              <h1 class="title">GALLERY</h1>
+              <h2 class="subtitle">
+                  Hasil proyek yang telah kami selesaikan 
+              </h2>
+              <div class="columns is-multiline">
+                  <div class="column is-one-quarter-desktop is-half-tablet">
+                    <div class="card">
+                      <div class="card-image">
+                        <figure class="image is-3by2">
+                            <img src="https://unsplash.it/300/200/?random&pic=1" />
+                        </figure>
+                        <div class="card-content is-overlay is-clipped">
+                            <span class="tag is-info">
+                                Judul gambar di sini
+                            </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column is-one-quarter-desktop is-half-tablet">
+                    <div class="card">
+                      <div class="card-image">
+                        <figure class="image is-3by2">
+                            <img src="https://unsplash.it/300/200/?random&pic=2" />
+                        </figure>
+                        <div class="card-content is-overlay is-clipped">
+                            <span class="tag is-info">
+                                Judul gambar di sini
+                            </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column is-one-quarter-desktop is-half-tablet">
+                    <div class="card">
+                      <div class="card-image">
+                        <figure class="image is-3by2">
+                            <img src="https://unsplash.it/300/200/?random&pic=3" />
+                        </figure>
+                        <div class="card-content is-overlay is-clipped">
+                            <span class="tag is-info">
+                                Judul gambar di sini
+                            </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column is-one-quarter-desktop is-half-tablet">
+                    <div class="card">
+                      <div class="card-image">
+                        <figure class="image is-3by2">
+                            <img src="https://unsplash.it/300/200/?random&pic=4" />
+                        </figure>
+                        <div class="card-content is-overlay is-clipped">
+                            <span class="tag is-info">
+                                Judul gambar di sini
+                            </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column is-one-quarter-desktop is-half-tablet">
+                    <div class="card">
+                      <div class="card-image">
+                        <figure class="image is-3by2">
+                            <img src="https://unsplash.it/300/200/?random&pic=5" />
+                        </figure>
+                        <div class="card-content is-overlay is-clipped">
+                            <span class="tag is-info">
+                                Judul gambar di sini
+                            </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column is-one-quarter-desktop is-half-tablet">
+                    <div class="card">
+                      <div class="card-image">
+                        <figure class="image is-3by2">
+                            <img src="https://unsplash.it/300/200/?random&pic=6" />
+                        </figure>
+                        <div class="card-content is-overlay is-clipped">
+                            <span class="tag is-info">
+                                Judul gambar di sini
+                            </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column is-one-quarter-desktop is-half-tablet">
+                    <div class="card">
+                      <div class="card-image">
+                        <figure class="image is-3by2">
+                            <img src="https://unsplash.it/300/200/?random&pic=7" />
+                        </figure>
+                        <div class="card-content is-overlay is-clipped">
+                            <span class="tag is-info">
+                                Judul gambar di sini
+                            </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column is-one-quarter-desktop is-half-tablet">
+                    <div class="card">
+                      <div class="card-image">
+                        <figure class="image is-3by2">
+                            <img src="https://unsplash.it/300/200/?random&pic=8" />
+                        </figure>
+                        <div class="card-content is-overlay is-clipped">
+                            <span class="tag is-info">
+                                Judul gambar di sini
+                            </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column is-one-quarter-desktop is-half-tablet">
+                    <div class="card">
+                      <div class="card-image">
+                        <figure class="image is-3by2">
+                            <img src="https://unsplash.it/300/200/?random&pic=9" />
+                        </figure>
+                        <div class="card-content is-overlay is-clipped">
+                            <span class="tag is-info">
+                                Judul gambar di sini
+                            </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column is-one-quarter-desktop is-half-tablet">
+                    <div class="card">
+                      <div class="card-image">
+                        <figure class="image is-3by2">
+                            <img src="https://unsplash.it/300/200/?random&pic=10" />
+                        </figure>
+                        <div class="card-content is-overlay is-clipped">
+                            <span class="tag is-info">
+                                Judul gambar di sini
+                            </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column is-one-quarter-desktop is-half-tablet">
+                    <div class="card">
+                      <div class="card-image">
+                        <figure class="image is-3by2">
+                            <img src="https://unsplash.it/300/400/?random&pic=11" />
+                        </figure>
+                        <div class="card-content is-overlay is-clipped">
+                            <span class="tag is-info">
+                                Judul gambar di sini
+                            </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </section>    
+      <footer class="footer has-background-dark has-text-light" id="kontak">
+          <div class="container">
+              <h1 class="title">COUNTACT</h1>
+              <h2 class="subtitle">
+                  <!-- A simple container to divide your page into <strong>sections</strong>, like
+                  the one you're currently reading. -->
+              </h2>
+              <div class="columns">
+                  <div class="column has-text-centered">
+                    <div class="columns">
+                      <div class="column"></div>
+                      <div class="column is-two-fifths">
+                          <figure class="media has-text-centered">
+                              <p class="image">
+                                <img src="static/images/logo_white.png" width="100%" />
+                              </p>
+                          </figure>
+                      </div>
+                      <div class="column"></div>
+                    </div>
+                    <!-- <p><b>PT.SULAEMANKONSTRUKSI.com</b></p> -->
+                  </div>
+                  <div class="column">
+                    <p>
+                      <b>Kp. Padangenyang</b><br>
+                      Rt.02 Rw.02 Des. Cipelang Kec. Cijeruk<br>
+                      Kabupaten <b>Bogor</b> 16740
+                    </p>
+                  </div>
+                  <div class="column">
+                    <p>
+                      <b>Telpon   :</b> 0878-2078-7507<br>
+                      <b>Whatsapp :</b> 0878-2078-7507<br>
+                      <b>email :</b> sulaemanrenovasi@gmail.com
+                    </p>
+                  </div>
+              </div>
+              <!-- <div class="countac-judul"><h1><b>COUNTACT</b></h1></div> -->
+              <div class="countac-location"></div>
+              <div class="countac-telp"></div>
+              <div class="countac-email"></div>
+              <div class="countac-facebook"></div>
+              <div class="countac-instagram"></div>
+          </div>
+          <a href="https://api.whatsapp.com/send?phone=+6281383171066&text=assalamualaikum." class="float" target="_blank">
+          <i class="fa fa-whatsapp my-float"></i>
+          </a>
+        </footer>
+      <div class="intro">
+        <section class="section">
+          <div class="container is-fullhd">
+            <p class="is-size-1 has-text-light">Hello, ini intro</p>
+          </div>
+        </section>
+      </div>
+        <script src="./static/js/htmx.min.js"></script>
+        <script type="text/javascript" src="./static/js/notie/notie.min.js"></script>
+        <script src="./static/js/custom/base.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+       
+             var body = document.querySelector("body");
+             var waktuIntro = 10000;
+             var to = setTimeout(function(){
+               body.classList.add("ready");
+             }, waktuIntro)
+       
+             // Get all "navbar-burger" elements
+             const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+       
+             // Add a click event on each of them
+             $navbarBurgers.forEach( el => {
+               el.addEventListener('click', () => {
+       
+                 // Get the target from the "data-target" attribute
+                 const target = el.dataset.target;
+                 const $target = document.getElementById(target);
+       
+                 // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                 el.classList.toggle('is-active');
+                 $target.classList.toggle('is-active');
+       
+               });
+           });
+       });
+       
+           // Get the button
+           let mybutton = document.getElementById("myBtn");
+       
+       // When the user scrolls down 20px from the top of the document, show the button
+       window.onscroll = function() {scrollFunction()};
+       
+       function scrollFunction() {
+         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+           mybutton.style.display = "block";
+         } else {
+           mybutton.style.display = "none";
+         }
+       }
+       
+       // When the user clicks on the button, scroll to the top of the document
+       function topFunction() {
+         document.body.scrollTop = 0;
+         document.documentElement.scrollTop = 0;
+       }
+       
+       </script>
+    </body>
+</html>

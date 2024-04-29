@@ -1,0 +1,30 @@
+
+version: '3'
+ 
+services:
+  db:
+    image: mysql:latest
+    container_name: db
+    environment:
+      MYSQL_ROOT_PASSWORD: mura123
+      MYSQL_DATABASE: lapsi
+      MYSQL_USER: mura
+      MYSQL_PASSWORD: mura123
+    ports:
+      - "5506:3306"
+    volumes:
+      - dbdata:/var/lib/mysql
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: pma
+    links:
+      - db
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    restart: always
+    ports:
+      - 8081:80
+volumes:
+  dbdata:
